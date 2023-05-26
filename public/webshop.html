@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link type="text/css" rel="stylesheet" href="style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="main.js"></script>
+        <title>OLDSCHOOL RUNESCAPE</title>
+    </head>
+    <body>
+        <nav class="navbar-container">
+            <nav class="navbar">
+              <ul class="navbar-left">
+                <li><a class ="navbar-item" href="index.html">Home</a></li>
+                <li><a class ="navbar-item" href="history.html">History</a></li>
+                <li><a class ="navbar-item" href="webshop.html">Shop</a></li>
+              </ul>
+              <ul class="navbar-right">
+                <li class="sign-in" id="cart-button" onclick="toggleCart()">View cart</li>
+                <li class="sign-in" onclick="darkModeToggle()">Toggle Darkmode</li>
+              </ul>
+            </nav>
+          </nav>
+          <section id="cart" class="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: <output id="total-price">0</output></p>
+            <button  class="product-button product-button-black" onclick="clearCart()">Clear Cart</button>
+            <button class="product-button product-button-black" onclick="buyNow()">Buy Now</button>
+          </section> 
+          <section class="container">
+            <article class="product-container">
+              <article class="product" id="product1">
+                <figure class="product-left">
+                  <img
+                    alt="The logo of Oldschool Runescape"
+                    class="block"
+                    src="resources/runescape-oldschool-banner.jpg"
+                  />
+                </figure>
+                <article class="product-right" id="product1text">
+                  <h2 class="product-title">
+                    Everything you need to kickstart your experience, at convenient prices.
+                  </h2>
+                </article>
+              </article>
+            </article>
+            <article class="product-container">
+              <article class="product" id="product2">
+                <article class="product-right">
+                  <h2 class="product-title-item" id="title1">
+                    Elite Clue Scroll boost
+                  </h2>
+                  <p class="product-description" id="price1">
+                    15$
+                  </p>
+                  <button class="product-button product-button-black" id="button2" onclick="addToCart(this)">
+                    Buy now
+                  </button>
+                </article>
+                <figure class="product-left">
+                  <img
+                    alt="An image of a table of possible rewards from an Elite Clue Scroll"
+                    class="block"
+                    src="resources/cluescrolls.png">
+                </figure>
+              </article>
+            </article>
+            <article class="product-container">
+              <article class="product" id="product3">
+                <figure class="product-left">
+                  <img
+                    alt="A picture of a Runescape bond"
+                    class="block"
+                    src="resources/bonds.jpg"
+                  />
+                </figure>
+                <article class="product-right">
+                  <h2 class="product-title-item" id="title2">
+                    Runescape Bond, providing 30 days of game time
+                  </h2>
+                  <p class="product-description" id="description1">
+                    25$
+                  <button class="product-button product-button-white" id="button3" onclick="addToCart(this)">
+                    Buy now
+                  </button>
+                </article>
+              </article>
+            </article>
+            <article class="product-container">
+              <article class="product" id="product4">
+                <article class="product-right">
+                  <h2 class="product-title-item" id="title3">
+                    Fire cape boost, all layers completed
+                  </h2>
+                  <p class="product-description" id="description2">
+                    150$
+                  </p>
+                  <button class="product-button product-button-black" id="button4" onclick="addToCart(this)">
+                    Buy now
+                  </button>
+                </article>
+                <figure class="product-left">
+                  <img
+                    alt="A picture of Jad's empty lair, and the player wearing the Fire Cape."
+                    class="block"
+                    src="resources/runescape-fight-cave-how-to-kill-jad-the-easy-way-and-win-the-fire-cape.jpg"
+                  />
+                </figure>
+              </article>
+            </article>
+            </section>
+        <section class="footer">
+            <article>
+                This website was created by Roy van Delft, for the course IWDER.
+                Applying the skills of web development, writing semantic HTML,
+                to build a stylish, responsive and interactive website.
+                
+            </article>
+            <article class="footer-text">
+                No profits were made of this website. Images and other materials used are all used according to the Fair Use laws.
+            </article>
+        </section>
+    </body>
+</html> 
